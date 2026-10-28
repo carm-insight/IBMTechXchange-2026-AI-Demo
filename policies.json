@@ -1,0 +1,56 @@
+{
+  "policy_document": {
+    "id": "PROC-POL-2026",
+    "title": "Agency Procurement Authority & Approval Policy",
+    "version": "2026.2",
+    "effective_date": "2026-07-01",
+    "owner": "Office of the Chief Procurement Officer",
+    "source_system": "watsonx.data governed policy collection (simulated locally)"
+  },
+  "tiers": {
+    "tier_1": {
+      "min_amount": 0,
+      "max_amount": 999.99,
+      "action": "AUTO_APPROVE",
+      "section": "4.1",
+      "policy": "Section 4.1: Purchases under $1,000 are auto-approved.",
+      "approver": "None (autonomous, policy-permitted)",
+      "sla": "Immediate",
+      "risk": "LOW"
+    },
+    "tier_2": {
+      "min_amount": 1000,
+      "max_amount": 5000,
+      "action": "MANAGER_APPROVAL_REQUIRED",
+      "section": "4.2",
+      "policy": "Section 4.2: Purchases $1,000 - $5,000 require Department Manager approval.",
+      "approver": "Department Manager",
+      "sla": "2 business days",
+      "risk": "MEDIUM"
+    },
+    "tier_3": {
+      "min_amount": 5000.01,
+      "max_amount": 999999,
+      "action": "COMMITTEE_REVIEW_REQUIRED",
+      "section": "4.3",
+      "policy": "Section 4.3: Purchases over $5,000 require Procurement Committee approval.",
+      "approver": "Procurement Committee",
+      "sla": "10 business days",
+      "risk": "HIGH"
+    }
+  },
+  "prohibited_practices": [
+    {
+      "section": "4.4",
+      "title": "Split purchasing",
+      "policy": "Section 4.4: Splitting a single requirement into multiple smaller purchases to avoid an approval threshold is prohibited and must be referred to the Procurement Integrity Office.",
+      "keywords": ["split", "splitting", "break it into", "break up the", "divide the order", "separate pos", "separate purchase orders", "two orders", "two pos", "under the threshold", "avoid approval", "avoid the threshold", "stay under"]
+    },
+    {
+      "section": "4.5",
+      "title": "Personal use",
+      "policy": "Section 4.5: Agency funds may not be used for personal purchases or gift cards.",
+      "keywords": ["personal use", "for myself", "my personal", "gift card", "gift cards"]
+    }
+  ]
+}

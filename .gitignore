@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Runtime evidence ledger: created fresh on first run
+audit_log.jsonl
+
+# Local secrets (watsonx.ai credentials)
+.env
+.streamlit/secrets.toml

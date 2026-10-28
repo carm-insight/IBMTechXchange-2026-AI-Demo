@@ -1,0 +1,4 @@
+streamlit>=1.40
+requests>=2.31
+# Optional, production parity with IBM watsonx.ai (see llm.py):
+# ibm-watsonx-ai>=1.1
