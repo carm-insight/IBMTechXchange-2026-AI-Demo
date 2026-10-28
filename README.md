@@ -24,8 +24,8 @@ using open-source tools on a laptop, with every stage mapped to the IBM watsonx 
   `granite4:micro`.
 
 ```bash
-git clone <this repo URL>
-cd <repo folder>
+git clone https://github.com/carm-insight/IBMTechXchange-2026-AI-Demo.git
+cd IBMTechXchange-2026-AI-Demo
 ```
 
 ## Quick start (Windows)
